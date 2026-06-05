@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-label="Bann Architectural Systems">
+  <defs>
+    <style>
+      .brand-red { fill: #d52127; }
+      .brand-dark { fill: #161c22; }
+      .brand-gray { fill: #7c848c; }
+      .wordmark { font-family: Inter, Arial, sans-serif; font-weight: 700; letter-spacing: 0.01em; }
+      .subtitle { font-family: Inter, Arial, sans-serif; font-weight: 500; letter-spacing: 0.28em; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="340" fill="none"/>
+
+  <g transform="translate(24 20)">
+    <path d="M72 12 L0 112" fill="none" stroke="#8b8f93" stroke-width="6" stroke-linecap="square"/>
+    <path d="M72 12 L72 164" fill="none" stroke="#101820" stroke-width="6" stroke-linecap="square"/>
+    <path d="M43 94 L43 164" fill="none" stroke="#8b8f93" stroke-width="6" stroke-linecap="square"/>
+    <path d="M28 110 L192 110" fill="none" stroke="#101820" stroke-width="10" stroke-linecap="square"/>
+    <path d="M108 0 L108 244" fill="none" stroke="#101820" stroke-width="12" stroke-linecap="square"/>
+    <path d="M24 112 L92 24" fill="none" stroke="#c6c9cc" stroke-width="4" stroke-linecap="square"/>
+  </g>
+
+  <g transform="translate(174 16)">
+    <text x="0" y="116" class="brand-red wordmark" font-size="112">BANN</text>
+    <rect x="0" y="136" width="530" height="9" class="brand-dark"/>
+    <text x="12" y="188" class="brand-dark subtitle" font-size="36">ARCHITECTURAL SYSTEMS</text>
+  </g>
+</svg>
