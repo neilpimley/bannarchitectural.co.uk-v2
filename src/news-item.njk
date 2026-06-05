@@ -1,0 +1,28 @@
+---
+layout: base.njk
+pagination:
+  data: news.items
+  size: 1
+  alias: item
+permalink: "/latest-news/{{ item.slug }}/"
+title: "Latest News"
+---
+<section class="page-hero compact">
+  <p class="eyebrow">Latest news</p>
+  <h1>{{ item.title }}</h1>
+  <p class="news-date">{{ item.date | readableDate }}</p>
+</section>
+
+<section class="news-detail">
+  <article class="news-article">
+    <img src="{{ item.image }}" alt="{{ item.title }}">
+    <div class="news-body">
+      <time datetime="{{ item.date }}">{{ item.date | readableDate }}</time>
+      <h2>{{ item.title }}</h2>
+      <div class="rich-text">
+        {{ item.body | safe }}
+      </div>
+      <a class="text-link" href="/latest-news/">Back to news</a>
+    </div>
+  </article>
+</section>

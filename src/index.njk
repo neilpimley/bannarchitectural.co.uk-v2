@@ -79,14 +79,16 @@ title: Home
   </div>
   <div class="news-list">
     {% for item in news.items %}
-      <article>
-        <img src="{{ item.image }}" alt="{{ item.title }}">
-        <div>
-          <time datetime="{{ item.date }}">{{ item.date | readableDate }}</time>
-          <h3>{{ item.title }}</h3>
-          <p>{{ item.summary }}</p>
-        </div>
-      </article>
+      <a class="news-card" href="/latest-news/{{ item.slug }}/">
+        <article>
+          <img src="{{ item.image }}" alt="{{ item.title }}">
+          <div>
+            <time datetime="{{ item.date }}">{{ item.date | readableDate }}</time>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.summary }}</p>
+          </div>
+        </article>
+      </a>
     {% endfor %}
   </div>
 </section>

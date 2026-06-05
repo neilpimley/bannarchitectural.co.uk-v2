@@ -1,0 +1,26 @@
+---
+layout: base.njk
+title: Latest News
+permalink: /latest-news/
+---
+<section class="page-hero compact">
+  <p class="eyebrow">Latest news</p>
+  <h1>Updates from Bann Architectural Systems</h1>
+</section>
+
+<section class="news-band">
+  <div class="news-list">
+    {% for item in news.items %}
+      <a class="news-card" href="/latest-news/{{ item.slug }}/">
+        <article>
+          <img src="{{ item.image }}" alt="{{ item.title }}">
+          <div>
+            <time datetime="{{ item.date }}">{{ item.date | readableDate }}</time>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.summary }}</p>
+          </div>
+        </article>
+      </a>
+    {% endfor %}
+  </div>
+</section>
