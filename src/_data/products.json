@@ -1,0 +1,39 @@
+{
+  "items": [
+  {
+    "title": "Aluminium Windows & Doors",
+    "slug": "aluminium-windows-doors",
+    "summary": "Thermally broken aluminium window and door systems with strong thermal performance, low maintenance and a wide range of finishes.",
+    "body": "Fabricated using thermally broken aluminium profiles, we offer an extensive range of window and door options in terms of hardware, operation, functionality and security. Energy rating levels of A+ are achievable, with double or triple glazing offering exceptional thermal performance and low U-values. Our systems benefit from minimal maintenance and are available in a wide choice of powder coated RAL colours. We are approved fabricators of Metal Technology and APS profiles.",
+    "image": "/uploads/projects/forestside-belfast.jpg"
+  },
+  {
+    "title": "Shop Fronts",
+    "slug": "shop-fronts",
+    "summary": "Commercial ground-floor glazing treatments with clean lines, practical door systems and flexible glazing options.",
+    "body": "Shopfronts are designed for use as commercial ground floor treatments offering a trouble-free economical system with attractive clean lines. Available in both single or double glazed options and incorporating quality commercial door systems, shopfronts can be tailored to suit your particular needs making it the ideal choice for the main street retailer. This low maintenance system can be powder coated in a wide range of RAL colours. We are approved fabricators of Metal Technology and APS profiles.",
+    "image": "/uploads/projects/modern-tyre-belfast.jpg"
+  },
+  {
+    "title": "Curtain Walling",
+    "slug": "curtain-walling",
+    "summary": "Large-format aluminium and glass systems for commercial premises, public buildings and domestic spaces.",
+    "body": "Curtain Walling offers the capability of creating vast expanses of glass while maintaining minimal sight lines, an impressive dynamic in any opening. With the ability to span multi-storeys vertically and incorporate sloped glazing, curtain walling allows light to fill any space, be it in domestic living or a commercial premise. A range of feature caps or glass to glass joints in both double or triple glazing options complete the system making it flexible to your aesthetic requirements. We are approved fabricators of Metal Technology and APS profiles.",
+    "image": "/uploads/projects/eagle-overseas.jpg"
+  },
+  {
+    "title": "Lift and Slide & Bi-Fold Doors",
+    "slug": "lift-and-slide-bi-fold-doors",
+    "summary": "Flexible aluminium door systems designed to maximise openings, natural light and indoor-outdoor living.",
+    "body": "Where floor space is of the utmost importance, a Lift and Slide door designed with 2, 3 or 4 pane options will maximise an opening while providing an abundance of natural light in your space. These doors incorporate multi-point locking and can accept both double and triple glaze options offering high levels of both insulation and weathering. Bi-Fold doors are the perfect solution to bring the outdoors in while keeping the weather out, available in a range of configurations with multi-point locking, shoot bolts and flush operating handles.",
+    "image": "/uploads/projects/dwelling-warrenpoint.jpg"
+  },
+  {
+    "title": "Roof Systems",
+    "slug": "roof-systems",
+    "summary": "Aluminium roof glazing for mono-pitch, ridge and bespoke light-filled spaces.",
+    "body": "Introduce light to your building using slope glazing. Available in both mono-pitch and ridge assemblies. Creating perfect solutions for a wide variety of areas, from narrow corridors to large public spaces.",
+    "image": "/uploads/projects/private-dwelling-killyleagh.jpg"
+  }
+  ]
+}

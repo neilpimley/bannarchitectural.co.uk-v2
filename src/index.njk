@@ -1,0 +1,92 @@
+---
+layout: base.njk
+title: Home
+---
+<section class="hero">
+  <img src="{{ site.hero.image }}" alt="Bann Architectural Systems project">
+  <div class="hero-copy">
+    <p>{{ site.hero.eyebrow }}</p>
+    <h1>{{ site.hero.title }}</h1>
+    <span>{{ site.hero.text }}</span>
+    <div class="hero-actions">
+      <a class="button" href="/projects/">View projects</a>
+      <a class="button secondary" href="/contact/">Get a quote</a>
+    </div>
+  </div>
+  <div class="hero-panel" aria-label="Company highlights">
+    <div><strong>2010</strong><span>Established</span></div>
+    <div><strong>A+</strong><span>Energy ratings achievable</span></div>
+    <div><strong>NI</strong><span>Commercial and domestic work</span></div>
+  </div>
+</section>
+
+<section class="intro-band">
+  <div>
+    <p class="eyebrow">What we do</p>
+    <p>{{ site.intro }}</p>
+  </div>
+</section>
+
+<section class="section-grid">
+  <div class="section-heading">
+    <p>Products</p>
+    <h2>Aluminium systems for commercial and domestic projects</h2>
+  </div>
+  <div class="product-strip">
+    {% for product in products.items %}
+      <a href="/products/#{{ product.slug }}" class="service-card">
+        <img src="{{ product.image }}" alt="{{ product.title }}">
+        <strong>{{ product.title }}</strong>
+        <span>{{ product.summary }}</span>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="split-section">
+  <div class="sticky-copy">
+    <p class="eyebrow">Recent projects</p>
+    <h2>Work delivered across Northern Ireland and beyond</h2>
+    <a class="text-link" href="/projects/">See all projects</a>
+  </div>
+  <div class="project-grid">
+    {% for project in projects.items | limit(6) %}
+      <article class="project-card">
+        <img src="{{ project.image }}" alt="{{ project.title }}">
+        <div>
+          <span>{{ project.category }}</span>
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.summary }}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="workshop">
+  <div>
+    <p class="eyebrow">Workshop</p>
+    <h2>{{ site.workshop.title }}</h2>
+    <p>{{ site.workshop.text }}</p>
+  </div>
+  <iframe src="{{ site.workshop.youtube }}" title="Bann Architectural Systems workshop video" allowfullscreen></iframe>
+</section>
+
+<section class="news-band">
+  <div class="section-heading">
+    <p>Latest news</p>
+    <h2>Updates from Bann Architectural Systems</h2>
+  </div>
+  <div class="news-list">
+    {% for item in news.items %}
+      <article>
+        <img src="{{ item.image }}" alt="{{ item.title }}">
+        <div>
+          <time datetime="{{ item.date }}">{{ item.date | readableDate }}</time>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.summary }}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>

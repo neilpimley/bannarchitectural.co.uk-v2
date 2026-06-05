@@ -1,0 +1,27 @@
+{
+  "title": "Bann Architectural Systems",
+  "description": "Specialists in aluminium window systems, doors, curtain walling, shopfronts, roof-glazing, patio and bi-fold doors.",
+  "phone": "028 9269 8855",
+  "email": "kyle@bann-systems.co.uk",
+  "facebook": "https://www.facebook.com/bannarchitecturalsystems/",
+  "address": {
+    "company": "Bann Architectural Systems Ltd",
+    "lines": ["81 Halfway Rd", "Banbridge", "BT32 4HB"]
+  },
+  "hero": {
+    "eyebrow": "Aluminium glazing specialists",
+    "title": "Bann Architectural Systems",
+    "text": "Commercial and domestic aluminium windows, doors, curtain walling, shopfronts, roof-glazing, patio and bi-fold doors manufactured from our Banbridge workshop.",
+    "image": "/uploads/projects/arco-mallusk.jpg"
+  },
+  "intro": "Welcome to Bann Architectural Systems Ltd, specialists in aluminium window systems, doors, curtain walling, shopfronts, roof-glazing, patio and bi-fold doors. We service both the commercial and domestic markets undertaking both large and small contracts.",
+  "about": {
+    "title": "About us",
+    "body": "Bann Architectural Systems Ltd was formed in October 2010. Based just off the A1 dual carriageway between Dromore and Banbridge, the company comprises three directors and ten staff who between them have a vast knowledge and experience of the market. Our product range includes window systems, doors, curtain walling, shopfronts, roof-glazing, patio and bi-fold doors. We are authorized fabricators of the Metal Technology and APS suite of profiles, a well established local systems supplier to the U.K. and Irish markets and we service both commercial and domestic sector customers undertaking both large and small contracts."
+  },
+  "workshop": {
+    "title": "Manufactured in our own workshop",
+    "text": "We have a fully fitted out workshop where we manufacture our doors and windows.",
+    "youtube": "https://www.youtube.com/embed/FfZ8ze8mDpo"
+  }
+}

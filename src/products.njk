@@ -1,0 +1,21 @@
+---
+layout: base.njk
+title: Products
+permalink: /products/
+---
+<section class="page-hero compact">
+  <p class="eyebrow">Products</p>
+  <h1>Aluminium window, door and glazing systems</h1>
+</section>
+<section class="product-list">
+  {% for product in products.items %}
+    <article id="{{ product.slug }}" class="product-detail">
+      <img src="{{ product.image }}" alt="{{ product.title }}">
+      <div>
+        <span class="product-index">0{{ loop.index }}</span>
+        <h2>{{ product.title }}</h2>
+        <p>{{ product.body }}</p>
+      </div>
+    </article>
+  {% endfor %}
+</section>

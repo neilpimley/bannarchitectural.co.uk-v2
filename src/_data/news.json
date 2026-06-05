@@ -1,0 +1,20 @@
+{
+  "items": [
+  {
+    "title": "Job Vacancy - Aluminium Fabricator",
+    "date": "2025-05-06",
+    "slug": "job-vacancy-aluminium-fabricator",
+    "summary": "Bann Architectural Systems Ltd are a specialist aluminium window, doors and curtain walling manufacturer.",
+    "image": "/uploads/news/hiring.png",
+    "body": "Bann Architectural Systems Ltd are a specialist Aluminium Window, Doors, Curtain Walling manufacturer. Contact the team for current vacancy details."
+  },
+  {
+    "title": "Secure By Design",
+    "date": "2023-09-18",
+    "slug": "secure-by-design-membership",
+    "summary": "We are delighted to have been awarded this licence for our aluminium windows and doors.",
+    "image": "/uploads/news/sbd-logo.jpg",
+    "body": "We are delighted to have been awarded this licence for our Aluminium Windows and Doors."
+  }
+  ]
+}

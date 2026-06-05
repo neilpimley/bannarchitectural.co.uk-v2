@@ -1,0 +1,23 @@
+---
+layout: base.njk
+title: Contact
+permalink: /contact/
+---
+<section class="page-hero compact">
+  <p class="eyebrow">Contact</p>
+  <h1>Talk to Bann Architectural Systems</h1>
+</section>
+<section class="contact-page">
+  <div>
+    <h2>Contact details</h2>
+    <p>The old contact form is currently unavailable. Please email with your contact name and telephone number.</p>
+    <div class="contact-actions">
+      <a class="button" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a class="button secondary" href="tel:{{ site.phone | replace(' ', '') }}">{{ site.phone }}</a>
+    </div>
+  </div>
+  <address>
+    <strong>{{ site.address.company }}</strong>
+    {% for line in site.address.lines %}<span>{{ line }}</span>{% endfor %}
+  </address>
+</section>

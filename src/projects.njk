@@ -1,0 +1,23 @@
+---
+layout: base.njk
+title: Projects
+permalink: /projects/
+---
+<section class="page-hero compact">
+  <p class="eyebrow">Projects</p>
+  <h1>Recent commercial and residential glazing projects</h1>
+</section>
+<section class="projects-page">
+  {% for project in projects.items %}
+    <article class="project-card large">
+      <img src="{{ project.image }}" alt="{{ project.title }}">
+      <div>
+        <span>{{ project.category }}</span>
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.summary }}</p>
+        {% if project.builder %}<p><strong>Builder:</strong> {{ project.builder }}</p>{% endif %}
+        {% if project.architect %}<p><strong>Architect:</strong> {{ project.architect }}</p>{% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</section>

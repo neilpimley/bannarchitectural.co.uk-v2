@@ -1,0 +1,98 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "site"
+        label: "General Content"
+        file: "src/_data/site.json"
+        format: "json"
+        fields:
+          - { label: "Site Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Facebook", name: "facebook", widget: "string", required: false }
+          - label: "Address"
+            name: "address"
+            widget: "object"
+            fields:
+              - { label: "Company", name: "company", widget: "string" }
+              - { label: "Lines", name: "lines", widget: "list", field: { label: "Line", name: "line", widget: "string" } }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+          - { label: "Homepage Intro", name: "intro", widget: "text" }
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+          - label: "Workshop"
+            name: "workshop"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "YouTube Embed URL", name: "youtube", widget: "string" }
+  - name: "content"
+    label: "Content"
+    files:
+      - name: "products"
+        label: "Products"
+        file: "src/_data/products.json"
+        format: "json"
+        fields:
+          - label: "Products"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Slug", name: "slug", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+      - name: "projects"
+        label: "Projects"
+        file: "src/_data/projects.json"
+        format: "json"
+        fields:
+          - label: "Projects"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Slug", name: "slug", widget: "string" }
+              - { label: "Category", name: "category", widget: "select", options: ["Commercial", "Residential", "Hotels", "Schools"] }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "Builder", name: "builder", widget: "string", required: false }
+              - { label: "Architect", name: "architect", widget: "string", required: false }
+              - { label: "Image", name: "image", widget: "image" }
+      - name: "news"
+        label: "News"
+        file: "src/_data/news.json"
+        format: "json"
+        fields:
+          - label: "News"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+              - { label: "Slug", name: "slug", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Body", name: "body", widget: "text" }
