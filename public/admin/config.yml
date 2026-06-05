@@ -25,9 +25,6 @@ auth:
   last_name_claim: last_name
   avatar_url_claim: avatar_url
 
-# Add site links in Decap CMS (optional)
-site_url: https://bannsrchitectural.netlify.app
-
 local_backend: true
 site_url: /
 display_url: /
