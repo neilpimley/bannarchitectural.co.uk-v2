@@ -1,0 +1,50 @@
+---
+layout: base.njk
+pagination:
+  data: projects.items
+  size: 1
+  alias: project
+permalink: "/projects/{{ project.slug }}/"
+title: "Projects"
+---
+<section class="page-hero compact project-hero">
+  <p class="eyebrow">{{ project.category }}</p>
+  <h1>{{ project.title }}</h1>
+  <p class="project-hero-summary">{{ project.summary }}</p>
+</section>
+
+<section class="project-detail-page">
+  <article class="project-detail-intro">
+    <img src="{{ project.image }}" alt="{{ project.title }}">
+    <div>
+      <span>{{ project.category }}</span>
+      <h2>{{ project.title }}</h2>
+      <p>{{ project.summary }}</p>
+      <dl class="project-meta detail">
+        {% if project.builder %}
+          <div>
+            <dt>Builder</dt>
+            <dd>{{ project.builder }}</dd>
+          </div>
+        {% endif %}
+        {% if project.architect %}
+          <div>
+            <dt>Architect</dt>
+            <dd>{{ project.architect }}</dd>
+          </div>
+        {% endif %}
+      </dl>
+      <a class="text-link" href="/projects/">Back to projects</a>
+    </div>
+  </article>
+
+  {% if project.images and project.images.length > 1 %}
+    <div class="project-gallery">
+      {% for image in project.images %}
+        {% if loop.index > 1 %}
+          <img src="{{ image }}" alt="{{ project.title }} image {{ loop.index }}">
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>

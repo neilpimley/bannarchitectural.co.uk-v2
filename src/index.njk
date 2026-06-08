@@ -51,14 +51,14 @@ title: Home
   </div>
   <div class="project-grid">
     {% for project in projects.items | limit(6) %}
-      <article class="project-card">
+      <a class="project-card" href="/projects/{{ project.slug }}/">
         <img src="{{ project.image }}" alt="{{ project.title }}">
         <div>
           <span>{{ project.category }}</span>
           <h3>{{ project.title }}</h3>
           <p>{{ project.summary }}</p>
         </div>
-      </article>
+      </a>
     {% endfor %}
   </div>
 </section>

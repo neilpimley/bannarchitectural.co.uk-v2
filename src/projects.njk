@@ -9,15 +9,27 @@ permalink: /projects/
 </section>
 <section class="projects-page">
   {% for project in projects.items %}
-    <article class="project-card large">
+    <a class="project-card project-list-card" href="/projects/{{ project.slug }}/">
       <img src="{{ project.image }}" alt="{{ project.title }}">
       <div>
         <span>{{ project.category }}</span>
         <h2>{{ project.title }}</h2>
         <p>{{ project.summary }}</p>
-        {% if project.builder %}<p><strong>Builder:</strong> {{ project.builder }}</p>{% endif %}
-        {% if project.architect %}<p><strong>Architect:</strong> {{ project.architect }}</p>{% endif %}
+        <dl class="project-meta">
+          {% if project.builder %}
+            <div>
+              <dt>Builder</dt>
+              <dd>{{ project.builder }}</dd>
+            </div>
+          {% endif %}
+          {% if project.architect %}
+            <div>
+              <dt>Architect</dt>
+              <dd>{{ project.architect }}</dd>
+            </div>
+          {% endif %}
+        </dl>
       </div>
-    </article>
+    </a>
   {% endfor %}
 </section>
